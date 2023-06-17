@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/formulario.css">
     <title>Formulario</title>
 </head>
+
 <body>
     <header>
         <p>20% de descuento en todos los productos!</p>
@@ -24,18 +33,71 @@
         <div class="forms">
             <h3>¡Añadí tu super!</h3>
             <p>Agregá tu personaje favorito completando las opciones.</p>
-            <form action="">
-                <label for="nombre">*Nombre</label>
-                <br>
-                <input type="text" id="nombre" name="nombre">
-                <br>
-                <label for="fecha">Fecha</label>
-                <br>
-                <input type="date" name="fecha" id="fecha">
-                <br>
-                
 
+            <form action="">
+                <div class="form-section">
+                    <div class="field box1">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="comment"></label>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="field box2">
+                        <label for="especie">*Espacie</label>
+                        <select name="especie" id="especie">
+                            <option value="millonario">Millonario</option>
+                            <option value="diosOsemidios">Dios o semidios</option>
+                            <option value="mutante">Mutante</option>
+                            <option value="humanoMejorado">Humano mejorado</option>
+                            <option value="alien">Alienigena</option>
+                        </select>
+                        <label for="foto">Agregar Foto</label>
+                        <input type="file" name="foto" id="foto">
+
+                        <div>
+                            <label for="poderes">Poderes</label>
+                            <label for="Volar" class="box">
+                                <input type="checkbox" name="poderes" id="Volar" value="Volar">
+                                Volar
+                            </label>
+                            <label for="superInteligencia" class="box">
+                                <input type="checkbox" name="poderes" id="superInteligencia" value="superInteligencia">
+                                SuperInteligencia
+                            </label>
+                            <label for="rayoLaser" class="box">
+                                <input type="checkbox" name="poderes" id="rayoLaser" value="rayoLaser">
+                                Vista de rayo laser
+                            </label>
+                            <label for="billetera" class="box">
+                                <input type="checkbox" name="poderes" id="billetera" value="billetera">
+                                Billetera gorda
+                            </label>
+
+                            <hr>
+
+                            <div>
+                                <label for="tipoPersonaje">Tipo de personaje</label>
+                                <label for="heroe" class="radiobox">
+                                    <input type="radio" name="tipo" id="heroe" value="heroe">
+                                    Herore / Heroina
+                                </label>
+                                <label for="villano" class="radiobox">
+                                    <input type="radio" name="tipo" id="villano" value="villano">
+                                    Villano / Villana
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                </div>
+                <div class="box3">
+                    <button type="submit">Añadir</button>
+                </div>
             </form>
+
         </div>
     </body>
 
@@ -43,4 +105,5 @@
 
     </footer>
 </body>
+
 </html>

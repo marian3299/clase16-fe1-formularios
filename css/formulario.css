@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -52,12 +53,68 @@ div.forms h3 {
     text-align: center;
     color: #FBFFFD;
     font-size: 2.5rem;
+    font-weight: 700;
 }
 
 div.forms p {
     text-align: center;
     color: #FBFFFD;
     font-size: 1.25rem;
+    font-weight: 300;
 }
 
+.form-section {
+    display: flex;
+   
+}
+
+.field {
+    width: 50%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    margin-left: 120px;
+    margin-right: 10px;
+}
+
+.box2 {
+    margin-right: 120px;
+    margin-left: 10px;
+}
+
+div.box2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+label.box {
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+}
+
+label.radiobox {
+    font-size: 1.25rem;
+    font-family: 'Karla', sans-serif;
+}
+
+div.box3 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+div.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
