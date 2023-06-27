@@ -123,12 +123,18 @@ section article button {
     margin: 5px 0px 20px 0px;
 }
 
+section article button:hover {
+    
+    background-color: #1CD1B0;
+}
+
 section.boton-mas {
     position:fixed;
     bottom: 40%;
     left: 89%;
     
 }
+
 
 section.boton-mas a {
     text-decoration: none;
@@ -137,6 +143,11 @@ section.boton-mas a {
     font-size: 3.9rem;
     padding: 10% 65%;
     border-radius: 100%;
+}
+
+section.boton-mas a:hover {
+    cursor: pointer;
+    background-color: #333333;
 }
 
 footer{

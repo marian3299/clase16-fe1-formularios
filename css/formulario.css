@@ -131,11 +131,9 @@ textarea {
     border-radius: 16px;
     height: 50%;
     resize: none;
+    padding: 12px;
 }
 
-textarea::placeholder {
-    padding: 5px;
-}
 
 
 .radio-box {
@@ -154,6 +152,24 @@ button {
     font-size: 30px;
     background-color: #00f0c4;;
     font-weight: bold;
+}
+
+input:focus {
+    background-color: antiquewhite;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+
+textarea:focus {
+    background-color: antiquewhite;
+}
+
+input[type="radio"]:checked,input[type="checkbox"]:checked {
+   box-shadow: 0 0 0 3px #00f0c4;
 }
 
 footer{
