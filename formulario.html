@@ -38,14 +38,16 @@
                 <div class="form-section">
                     <div class="field box1">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre" class="box-style">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fehca" id="fecha" class="box-style">
                         <label for="comment"></label>
-                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comentarios"></textarea>
                     </div>
 
                     <div class="field box2">
                         <label for="especie">*Espacie</label>
-                        <select name="especie" id="especie">
+                        <select name="especie" id="especie" class="box-style">
                             <option value="millonario">Millonario</option>
                             <option value="diosOsemidios">Dios o semidios</option>
                             <option value="mutante">Mutante</option>
@@ -55,7 +57,7 @@
                         <label for="foto">Agregar Foto</label>
                         <input type="file" name="foto" id="foto">
 
-                        <div>
+                        <div class="check-container">
                             <label for="poderes">Poderes</label>
                             <label for="Volar" class="box">
                                 <input type="checkbox" name="poderes" id="Volar" value="Volar">
@@ -76,7 +78,7 @@
 
                             <hr>
 
-                            <div>
+                            <div class="radio-box">
                                 <label for="tipoPersonaje">Tipo de personaje</label>
                                 <label for="heroe" class="radiobox">
                                     <input type="radio" name="tipo" id="heroe" value="heroe">
@@ -93,7 +95,7 @@
                     <br>
 
                 </div>
-                <div class="box3">
+                <div class="box3 ">
                     <button type="submit">Añadir</button>
                 </div>
             </form>
@@ -102,7 +104,7 @@
     </body>
 
     <footer>
-
+        <p>Todos los derechos reservados a FRONT END 1</p>
     </footer>
 </body>
 
